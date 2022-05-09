@@ -10,6 +10,8 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "photo-sphere-viewer": "^3.5.1",
+    "three": "^0.140.1",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
   },

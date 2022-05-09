@@ -507,8 +507,8 @@ export default {
         .animate({
           longitude: marker.config.longitude,
           latitude: marker.config.latitude,
-          zoom: 60,
-          speed: "0rpm",
+          zoom: 70,
+          speed: "0.5rpm",
         })
         // .then(() =>
         //   this.viewer.setPanorama(this.imgurl2).then(

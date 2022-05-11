@@ -13,6 +13,7 @@
     "photo-sphere-viewer": "^4.6.1",
     "three": "^0.140.1",
     "vue": "^2.5.2",
+    "vue-3d-model": "^1.4.0",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {

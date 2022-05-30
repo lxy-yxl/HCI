@@ -503,6 +503,8 @@ export default {
       const markerid = marker.id;
  
       this.viewer
+
+      // 复现一下bug
       // 动画
         .animate({
           longitude: marker.config.longitude,

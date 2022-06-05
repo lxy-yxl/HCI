@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Home from '@/components/Home'
 import view3D from '@/components/view3D'
 import ShowModel from '@/components/ShowModel'
+import gifvedio from '@/components/gifvedio'
 
 Vue.use(Router)
 
@@ -19,9 +20,14 @@ export default new Router({
       component: view3D
     },
     {
-      path: '/',
+      path: '/ShowModel',
       name: 'ShowModel',
       component: ShowModel
+    },
+    {
+      path: '/',
+      name: 'gifvedio',
+      component: gifvedio
     }
   ]
 })

@@ -11,9 +11,15 @@
      向前方及两侧铺展亭台楼阁。
      园内青翠的松树、柏树和竹子间点缀着山石，
      形成四季常青的园林景观。
-      </p>
+      </p>  
+      <button @click="handlePlay('audio')">播放</button>
+      <button @click="stopPlay('audio')">停止播放</button>
+   
+      <audio id="audio" src="../../static/语音资料/太和殿.mp3"  hidden></audio>
       <div>
    <el-button @click="innerDrawer = true">历史知识</el-button>
+
+  
    <el-drawer
      title="历史知识"
      :append-to-body="true"
@@ -49,7 +55,8 @@ export default {
   data() {
     return {
         drawer: false,
-        innerDrawer: false
+        innerDrawer: false,
+        value: true
     };
   },
   //计算属性
@@ -91,7 +98,14 @@ export default {
             this.taiheVisible_ = false
           })
           .catch(_ => {});
+      },
+      handlePlay(id) {
+        document.getElementById(id).play()
+      },
+      stopPlay(id)  {
+        document.getElementById(id).pause()
       }
+      
   },
 }
 </script>
